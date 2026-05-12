@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body .page {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.containers {
+    width: 50%;
+    height: 100%;
+}
+
+.right-container {
+    background-color: #c61d28;
+    color: #fefefe;
+}
+
+.left-container header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 25px 50px;
+}
+
+header h1 {
+    font-size: 30px;
+}
+
+.search-area {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    padding: 10px 20px;
+    gap: 20px;
+    border-radius: 25px;
+    /* box-shadow: 0 0 15px rgba(0, 0, 0, 0.309); */
+    background-color: rgba(198, 193, 193, 0.285);
+}
+
+.search-area span i {
+    color: rgba(0, 0, 0, 0.479);
+}
+
+.search-area input {
+    border: none;
+    outline: none;
+    height: 90%;
+    font-size: 22px;
+    background-color: transparent;
+}
+
+.left-content {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 20px 40px;
+    margin: 10px 70px;
+}
+
+.left-content span {
+    writing-mode: vertical-rl;
+    transform: rotate(-180deg);
+    font-size: 60px;
+    font-family: cursive;
+    font-style: italic;
+    font-weight: bold;
+    /* background-color: #c61d28; */
+}
+
+.left-content .classification-info {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-box {
+    /* border-bottom: 1px solid black; */
+    width: 40%;
+    font-size: 23px;
+    font-weight: 500;
+    position: relative;
+    color: rgb(55, 55, 55);
+}
+
+.info-box .info-name {
+    font-weight: bold;
+}
+
+div.info-box::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: #c61d28;
+    position: absolute;
+    left: -20px;
+    top: 10px;
+}
+
+.left-content hr {
+    width: 50%;
+    border: 1px solid rgba(134, 133, 133, 0.268);
+}
+
+/* right container css */
+.right-container nav {
+    width: 100%;
+    padding: 25px 50px;
+}
+
+.right-container nav ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0px;
+    align-items: center;
+    font-size: 22px;
+    /* font-weight: 600; */
+    list-style: none;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.right-content {
+    width: 60%;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    padding: 20px 40px;
+    margin: 10px 200px;
+}
+
+.right-content h1 {
+    font-size: 60px;
+    font-weight: 400;
+}
+
+.right-content .insect-measure {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.insect-measure .line {
+    border: 1px solid white;
+    height: 170px;
+}
+
+.insect-measure .measure-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.measure-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 25px;
+    font-size: 20px;
+}
+
+.measure-info i {
+    font-size: 30px;
+}
+
+.insect-measure img {
+    height: 100px;
+    filter: invert(1) brightness(2);
+}
+
+.right-content .extra-info .price {
+    font-weight: 900;
+    font-size: 45px;
+    margin: 20px 0;
+}
+
+.right-content .extra-info span {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.right-content .extra-info span i {
+    font-size: 25px;
+}
+
+.right-content button {
+    padding: 15px 40px;
+    font-size: 20px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    margin: 20px 0;
+    background-color: rgb(227, 200, 164);
+}
+
+body img.beetle-image {
+    position: absolute;
+    top: 8%;
+    left: 38%;
+    height: 700px;
+    margin: auto;
+    filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.795))
+}
